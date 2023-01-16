@@ -1,23 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import Article from "./components/Article";
+import Body from "./components/Body";
+import Headsup from "./components/Headsup";
+import Sider from "./components/Sider";
+import MainContent from "./components/MainContent";
+import NeonLight from "./components/NeonLight";
+import VerticalNeonLight from "./components/VerticalNeonLight";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div class="bg-gradient-to-r from-black to-blue-800">
+      <Body />
+      <Headsup/>
+      <NeonLight />
+      <Sider />
+      <VerticalNeonLight />
     </div>
   );
 }
